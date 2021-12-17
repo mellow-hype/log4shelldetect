@@ -1,9 +1,8 @@
-# go-detect-log4j
+# detect-log4shell+sha256
 
-ADOPTED FROM: https://github.com/1lann/log4shelldetect
+**Adds functionality to compares the SHA256 of the file against those of known vulnerable versions of log4j-core.**
 
-Scans a folder recursively for Java programs that may be vulnerable to Log4Shell (CVE-2021-44228) by comparing the SHA256 of the file against
-those of known vulnerable versions of log4j-core.
+Scans a file or folder recursively for Java programs that may be vulnerable to Log4Shell (CVE-2021-44228) by inspecting the class paths inside files.
 
 If you only want possibly vulnerable files to be printed rather than all files, run with `-mode list`.
 
