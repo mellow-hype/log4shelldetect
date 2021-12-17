@@ -21,6 +21,8 @@ import (
 	"github.com/karrick/godirwalk"
 )
 
+// SHA256 hashes of known-vulnerable versions
+// https://github.com/mubix/CVE-2021-44228-Log4Shell-Hashes/blob/main/sha256sums.txt
 var known_bad_hashes = []string{
 	"bf4f41403280c1b115650d470f9b260a5c9042c04d9bcc2a6ca504a66379b2d6",
 	"58e9f72081efff9bdaabd82e3b3efe5b1b9f1666cefe28f429ad7176a6d770ae",
